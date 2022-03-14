@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>IP Address Tracker</title>
 </head>
 <body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="background">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
   </div>
+  <div class="container">
+    <h2 class="title">IP Address Tracker</h2>
+    <div class="form">Search for any IP address or domain</div>
+    <div class="info">
+      <div class="ip-address">
+        <div class="title">IP Address</div>
+        <div class="content"></div>
+      </div>
+      <div class="location">
+        <div class="title">Location</div>
+        <div class="content"></div>
+      </div>
+      <div class="timezone">
+        <div class="title">Timezone</div>
+        <div class="content">UTC <!-- add offset value dynamically using the API --></div>
+      </div>
+      <div class="ISP">
+        <div class="title">ISP</div>
+        <div class="content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/app.js"></script>  
 </body>
 </html>

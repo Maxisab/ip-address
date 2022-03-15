@@ -5,33 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   
   <title>IP Address Tracker</title>
 </head>
 <body>
   <div class="background">
     <div class="bg1"></div>
-    <div class="bg2"></div>
+    <div class="bg2" id="map"></div>
   </div>
   <div class="container">
     <h2 class="title">IP Address Tracker</h2>
-    <div class="form">Search for any IP address or domain</div>
+    <form class="form">
+      <input type="text" placeholder="Search for any IP address or domain">
+      <button type="submit"><img src="/images/icon-arrow.svg" alt=""></button>
+    </form>
     <div class="info">
       <div class="ip-address">
         <div class="title">IP Address</div>
-        <div class="content"></div>
+        <div class="content" id="ip-address"></div>
       </div>
       <div class="location">
         <div class="title">Location</div>
-        <div class="content"></div>
+        <div class="content" id="location"></div>
       </div>
       <div class="timezone">
         <div class="title">Timezone</div>
-        <div class="content">UTC <!-- add offset value dynamically using the API --></div>
+        <div class="content" id="timezone">UTC <!-- add offset value dynamically using the API --></div>
       </div>
       <div class="ISP">
         <div class="title">ISP</div>
-        <div class="content"></div>
+        <div class="content" id="ISP"></div>
       </div>
     </div>
   </div>

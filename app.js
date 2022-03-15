@@ -1,5 +1,3 @@
-// https://geo.ipify.org/api/v2/country?apiKey=at_2nKUG70FDc42eF0S1Wo7CraMOYU1K&ipAddress=8.8.8.8
-
 //LEAFLET MAP
 var map = L.map('map').setView([51.505, -0.09], 5);
 

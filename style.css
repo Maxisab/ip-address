@@ -90,3 +90,19 @@ form button {
   font-weight: 700;
   padding-bottom: 1.5rem;
 }
+
+@media screen and (min-width: 769px) {
+
+  .bg1 {
+    background-size: cover;
+  }
+
+  form {
+    width: 30%;
+  }
+  
+  .info {
+    width: 30%;
+  }
+
+}
